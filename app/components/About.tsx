@@ -49,15 +49,15 @@ export default function About() {
                 </p>
             </div>
 
-            <div className="mt-12 grid gap-10 rounded-[44px] border border-white/80 bg-white/70 p-6 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04),0_20px_40px_-15px_rgba(0,0,0,0.03)] backdrop-blur-xl sm:p-10 lg:grid-cols-2 lg:items-stretch lg:gap-14 lg:p-14">
+            <div className="mt-12 grid gap-10 rounded-[44px] border border-white/80 bg-white/70 p-6 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04),0_20px_40px_-15px_rgba(0,0,0,0.03)] backdrop-blur-xl sm:p-10 md:grid-cols-2 lg:gap-14 lg:p-14">
                 {/* Left: photo */ }
-                <div className="relative min-h-[360px] overflow-hidden rounded-[32px] border border-white/80 bg-gradient-to-br from-white to-[#D9DBE1] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
+                <div className="relative min-h-[320px] overflow-hidden rounded-[32px] border border-white/80 bg-gradient-to-br from-white to-[#D9DBE1] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] sm:min-h-[400px] md:min-h-[500px]">
                     {ABOUT_PHOTO ? (
                         <Image
                             src={ABOUT_PHOTO}
                             alt="Father and son repair team"
                             fill
-                            sizes="(min-width: 1024px) 520px, 100vw"
+                            sizes="(min-width: 640px) 520px, (min-width: 1024px) 520px, 100vw"
                             className="object-cover"
                         />
                     ) : (
@@ -71,12 +71,12 @@ export default function About() {
                         {stats.map((s) => (
                             <div
                                 key={s.label}
-                                className="rounded-2xl border border-white/70 bg-white/75 px-3 py-2 backdrop-blur-xl sm:px-4 sm:py-2.5"
+                                className="rounded-2xl border border-white/70 bg-white/75 px-2.5 py-1.5 backdrop-blur-xl sm:px-3 sm:py-2"
                             >
-                                <p className="text-lg font-bold leading-none tracking-tight text-primary sm:text-xl">
+                                <p className="text-base font-bold leading-none tracking-tight text-primary sm:text-lg">
                                     {s.value}
                                 </p>
-                                <p className="mt-1 text-[9px] text-secondary sm:text-[11px]">{s.label}</p>
+                                <p className="mt-0.5 text-[8.5px] text-secondary sm:text-[9px] sm:text-[11px]">{s.label}</p>
                             </div>
                         ))}
                     </div>
