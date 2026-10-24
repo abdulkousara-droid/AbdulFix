@@ -67,7 +67,7 @@ export default function Navbar() {
                         <a
                             href="#book"
                             onClick={() => setOpen(false)}
-                            className="mb-2 rounded-full bg-primary px-4 py-3 text-center text-sm font-medium text-white transition-transform hover:scale-[1.02]"
+                            className="mb-2 block rounded-full bg-primary px-6 py-3 text-center text-sm font-medium text-white transition-transform hover:scale-[1.02]"
                         >
                             Book a repair
                         </a>
@@ -76,7 +76,7 @@ export default function Navbar() {
                                 key={href}
                                 href={href}
                                 onClick={() => setOpen(false)}
-                                className="rounded-full px-4 py-3 text-center text-sm font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
+                                className="block rounded-full px-6 py-3 text-sm font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
                             >
                                 {label}
                             </a>
