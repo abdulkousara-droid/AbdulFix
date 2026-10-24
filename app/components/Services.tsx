@@ -71,9 +71,9 @@ function ServiceCard({
                         key={title}
                         className="flex items-center gap-4 rounded-2xl p-2.5 transition-colors hover:bg-neutral"
                     >
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[14px] bg-primary text-white">
-              <Icon size={20} strokeWidth={1.8} />
-            </span>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[14px] bg-primary text-white">
+                  <Icon size={20} strokeWidth={1.8} />
+                </span>
                         <div>
                             <p className="text-[15px] font-semibold text-primary">{title}</p>
                             <p className="text-sm text-secondary">{text}</p>
@@ -111,9 +111,9 @@ export default function Services() {
                         key={title}
                         className="flex items-start gap-4 rounded-[28px] border border-white/80 bg-white/70 p-5 backdrop-blur-xl"
                     >
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white">
-              <Icon size={20} strokeWidth={1.8} />
-            </span>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                  <Icon size={20} strokeWidth={1.8} />
+                </span>
                         <div>
                             <p className="text-[15px] font-semibold text-primary">{title}</p>
                             <p className="mt-0.5 text-sm text-secondary">{text}</p>

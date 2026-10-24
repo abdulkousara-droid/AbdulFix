@@ -57,8 +57,8 @@ function Tile({ brand }: { brand: Brand }) {
                 <span className="sr-only">{brand.name}</span>
             ) : (
                 <span className={brand.textClass ?? "text-[20px] font-semibold"}>
-          {brand.name}
-        </span>
+                    {brand.name}
+                </span>
             )}
         </div>
     );

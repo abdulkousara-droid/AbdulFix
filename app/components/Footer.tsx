@@ -23,15 +23,15 @@ const links = [
 export default function Footer() {
     return (
         <footer className="mx-auto w-full max-w-6xl px-6 pb-10">
-            <div className="rounded-[44px] border border-white/80 bg-white/70 p-8 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04),0_20px_40px_-15px_rgba(0,0,0,0.03)] backdrop-blur-xl sm:p-12">
+            <div className="rounded-[44px] border border-white/80 bg-white/70 p-6 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04),0_20px_40px_-15px_rgba(0,0,0,0.03)] backdrop-blur-xl sm:p-12">
                 <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1.2fr]">
                     {/* Brand */}
                     <div className="flex flex-col gap-4">
-                        <Link href="/" className="flex items-center gap-3">
+                        <Link href="/" className="flex items-center gap-2 sm:gap-3">
                             <Image src="/logo.svg" alt="" width={64} height={28} />
-                            <span className="text-2xl font-bold tracking-tight text-primary">
-                Abdel<span className="font-normal text-tertiary">Fix</span>
-              </span>
+                            <span className="text-2xl font-bold tracking-tight text-primary sm:text-3xl">
+                                Abdel<span className="font-normal text-tertiary">Fix</span>
+                            </span>
                         </Link>
                         <p className="max-w-xs text-[15px] leading-relaxed text-secondary">
                             Phone and tablet repair, hardware and software. We pick up, we fix

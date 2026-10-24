@@ -15,13 +15,18 @@ export default function Hero() {
             <div className="pointer-events-none absolute -left-24 top-[420px] -z-10 h-[360px] w-[360px] rounded-full bg-[#C9CBD2]/60 blur-[90px]" />
 
             <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-14 px-6 py-16 lg:min-h-[calc(100vh-7rem)] lg:flex-row lg:justify-between lg:py-10">
-                {/* Left: text */}
-                <div className="max-w-xl">
+                {/* Image: Appears first on mobile, last on desktop */}
+                <div className="shrink-0 order-first lg:order-last">
+                    <PhoneVisual />
+                </div>
+
+                {/* Text: Appears last on mobile, first on desktop */}
+                <div className="max-w-xl order-last lg:order-first">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-tertiary">
                         Phone &amp; tablet repair
                     </p>
 
-                    <h1 className="mt-5 text-[48px] font-bold leading-[1.02] tracking-[-0.03em] sm:text-6xl lg:text-[80px]">
+                    <h1 className="mt-5 text-[48px] font-bold leading-[1.02] tracking-[-0.03em] text-primary sm:text-6xl lg:text-[80px]">
                         <span className="text-primary">Fixed fast.</span>
                         <br />
                         <span className="font-light text-secondary">Fixed right.</span>
@@ -68,11 +73,6 @@ export default function Hero() {
                         <span>Barcelona and Badalona</span>
                         <span>Experienced technicians</span>
                     </div>
-                </div>
-
-                {/* Right: phone */}
-                <div className="shrink-0">
-                    <PhoneVisual />
                 </div>
             </div>
         </section>

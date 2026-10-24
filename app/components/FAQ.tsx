@@ -41,7 +41,7 @@ export default function FAQ() {
                 <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-tertiary">
                     FAQ
                 </p>
-                <h2 className="mt-4 text-4xl font-bold tracking-[-0.03em] text-primary sm:text-5xl">
+                <h2 className="mt-4 text-3xl font-bold tracking-[-0.03em] text-primary sm:text-5xl">
                     Good questions.
                 </h2>
                 <p className="mt-4 text-lg text-secondary">
@@ -53,22 +53,22 @@ export default function FAQ() {
                 {faqs.map(({ q, a }) => (
                     <details
                         key={q}
-                        className="group rounded-[28px] border border-white/80 bg-white/70 px-6 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] backdrop-blur-xl transition-colors open:bg-white/90"
+                        className="group rounded-[24px] border border-white/80 bg-white/70 px-6 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] backdrop-blur-xl transition-colors open:bg-white/90 sm:rounded-[28px]"
                     >
-                        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-left text-[17px] font-semibold text-primary [&::-webkit-details-marker]:hidden">
+                        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-left text-[15px] font-semibold text-primary sm:text-[17px] [&::-webkit-details-marker]:hidden">
                             {q}
                             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neutral text-primary transition-all duration-300 group-open:rotate-45 group-open:bg-primary group-open:text-white">
                 <Plus size={18} strokeWidth={2} />
               </span>
                         </summary>
-                        <p className="pb-6 pr-12 text-[15px] leading-relaxed text-secondary">
+                        <p className="pb-6 pr-12 text-sm leading-relaxed text-secondary sm:text-[15px]">
                             {a}
                         </p>
                     </details>
                 ))}
             </div>
 
-            <p className="mt-8 text-center text-[15px] text-secondary">
+            <p className="mt-8 text-center text-sm text-secondary sm:text-[15px]">
                 Still have a question?{" "}
                 <a
                     href="#book"

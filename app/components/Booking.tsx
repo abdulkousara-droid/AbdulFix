@@ -110,7 +110,7 @@ export default function Booking() {
     return (
         <section id="book" className="mx-auto w-full max-w-6xl scroll-mt-28 px-6 pb-24">
             <div className="mx-auto max-w-2xl text-center">
-                <h2 className="mt-4 text-4xl font-bold tracking-[-0.03em] text-primary sm:text-5xl">
+                <h2 className="mt-4 text-3xl font-bold tracking-[-0.03em] text-primary sm:text-5xl">
                     Ready when you are.
                 </h2>
                 <p className="mt-4 text-lg text-secondary">
@@ -119,13 +119,13 @@ export default function Booking() {
                 </p>
             </div>
 
-            <div className="mt-12 grid gap-10 rounded-[44px] border border-white/80 bg-white/70 p-6 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04),0_20px_40px_-15px_rgba(0,0,0,0.03)] backdrop-blur-xl sm:p-10 lg:grid-cols-2 lg:gap-14 lg:p-14">
+            <div className="mt-12 grid gap-10 rounded-[32px] border border-white/80 bg-white/70 p-6 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04),0_20px_40px_-15px_rgba(0,0,0,0.03)] backdrop-blur-xl sm:rounded-[44px] sm:p-10 lg:grid-cols-2 lg:gap-14 lg:p-14">
                 {/* Left */}
                 <div className="flex flex-col gap-5">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-tertiary">
                         Book a repair
                     </p>
-                    <h2 className="text-4xl font-bold leading-[1.05] tracking-[-0.03em] text-primary sm:text-5xl">
+                    <h2 className="text-3xl font-bold leading-[1.05] tracking-[-0.03em] text-primary sm:text-5xl">
                         Tell us what happened.
                     </h2>
                     <p className="text-lg leading-relaxed text-secondary">
@@ -146,7 +146,7 @@ export default function Booking() {
                     </div>
 
                     {/* Repair photo: fills the space under the button */}
-                    <div className="relative mt-2 min-h-[260px] flex-1 overflow-hidden rounded-[32px] border border-white/80 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
+                    <div className="relative mt-2 min-h-[260px] flex-1 overflow-hidden rounded-[24px] border border-white/80 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] sm:rounded-[32px]">
                         <Image
                             src="/repair.png"
                             alt="Technician repairing an iPhone screen"
@@ -164,7 +164,7 @@ export default function Booking() {
 
                 {/* Right */}
                 {status === "sent" ? (
-                    <div className="flex flex-col items-center justify-center gap-4 rounded-[32px] bg-neutral/80 p-8 text-center">
+                    <div className="flex flex-col items-center justify-center gap-4 rounded-[24px] bg-neutral/80 p-8 text-center sm:rounded-[32px]">
                         <CheckCircle2 size={44} strokeWidth={1.6} className="text-primary" />
                         <h3 className="text-2xl font-bold tracking-tight text-primary">
                             Thank you!
