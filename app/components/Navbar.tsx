@@ -64,23 +64,23 @@ export default function Navbar() {
             {open && (
                 <div className="absolute right-0 left-0 top-full z-50 mt-2 overflow-hidden rounded-[28px] border border-white/80 bg-white/90 p-3 shadow-[0_24px_60px_-12px_rgba(0,0,0,0.08)] backdrop-blur-2xl md:hidden">
                     <div className="flex flex-col gap-1">
-                        <a
-                            href="#book"
-                            onClick={() => setOpen(false)}
-                            className="mb-2 block rounded-full bg-primary px-6 py-3 text-center text-sm font-medium text-white transition-transform hover:scale-[1.02]"
-                        >
-                            Book a repair
-                        </a>
                         {links.map(({ label, href }) => (
                             <a
                                 key={href}
                                 href={href}
                                 onClick={() => setOpen(false)}
-                                className="block rounded-full px-6 py-3 text-sm font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
+                                className="block rounded-full px-6 py-3 text-center text-sm font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
                             >
                                 {label}
                             </a>
                         ))}
+                        <a
+                            href="#book"
+                            onClick={() => setOpen(false)}
+                            className="mt-2 block rounded-full bg-primary px-6 py-3 text-center text-sm font-medium text-white transition-transform hover:scale-[1.02]"
+                        >
+                            Book a repair
+                        </a>
                     </div>
                 </div>
             )}

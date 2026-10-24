@@ -67,16 +67,16 @@ export default function About() {
                         </div>
                     )}
 
-                    <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2">
+                    <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-1.5 sm:gap-2">
                         {stats.map((s) => (
                             <div
                                 key={s.label}
-                                className="rounded-2xl border border-white/70 bg-white/75 px-4 py-2.5 backdrop-blur-xl"
+                                className="rounded-2xl border border-white/70 bg-white/75 px-3 py-2 backdrop-blur-xl sm:px-4 sm:py-2.5"
                             >
-                                <p className="text-xl font-bold leading-none tracking-tight text-primary">
+                                <p className="text-lg font-bold leading-none tracking-tight text-primary sm:text-xl">
                                     {s.value}
                                 </p>
-                                <p className="mt-1 text-[11px] text-secondary">{s.label}</p>
+                                <p className="mt-1 text-[9px] text-secondary sm:text-[11px]">{s.label}</p>
                             </div>
                         ))}
                     </div>
