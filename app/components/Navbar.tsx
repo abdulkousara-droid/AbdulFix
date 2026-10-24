@@ -46,15 +46,8 @@ export default function Navbar() {
                     </a>
                 </div>
 
-                {/* Mobile: compact CTA + hamburger */}
+                {/* Mobile: hamburger */}
                 <div className="flex items-center gap-2 md:hidden">
-                    <a
-                        href="#book"
-                        className="rounded-full bg-primary px-3 py-2 text-sm font-medium text-white transition-transform hover:scale-[1.02] sm:px-5 sm:py-2.5 whitespace-nowrap"
-                    >
-                        Book a repair
-                    </a>
-
                     <button
                         type="button"
                         onClick={() => setOpen((v) => !v)}
@@ -70,13 +63,20 @@ export default function Navbar() {
             {/* Mobile dropdown */}
             {open && (
                 <div className="absolute right-0 left-0 top-full z-50 mt-2 overflow-hidden rounded-[28px] border border-white/80 bg-white/90 p-3 shadow-[0_24px_60px_-12px_rgba(0,0,0,0.08)] backdrop-blur-2xl md:hidden">
-                    <div className="flex flex-col">
+                    <div className="flex flex-col gap-1">
+                        <a
+                            href="#book"
+                            onClick={() => setOpen(false)}
+                            className="mb-2 rounded-full bg-primary px-4 py-3 text-center text-sm font-medium text-white transition-transform hover:scale-[1.02]"
+                        >
+                            Book a repair
+                        </a>
                         {links.map(({ label, href }) => (
                             <a
                                 key={href}
                                 href={href}
                                 onClick={() => setOpen(false)}
-                                className="rounded-full px-4 py-3 text-sm font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
+                                className="rounded-full px-4 py-3 text-center text-sm font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
                             >
                                 {label}
                             </a>
