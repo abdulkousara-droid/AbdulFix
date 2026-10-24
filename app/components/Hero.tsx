@@ -56,13 +56,13 @@ export default function Hero() {
                     <div className="mt-8 flex flex-wrap gap-3">
                         <a
                             href="#book"
-                            className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-7 text-[15px] font-medium text-white transition-transform hover:scale-[1.02]"
+                            className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-5 text-[15px] font-medium text-white transition-transform hover:scale-[1.02] sm:px-7"
                         >
                             Book a repair
                         </a>
                         <a
                             href="#work"
-                            className="inline-flex h-12 items-center justify-center rounded-full border border-black/10 bg-white/70 px-7 text-[15px] font-medium text-primary backdrop-blur-xl transition-colors hover:bg-white"
+                            className="inline-flex h-12 items-center justify-center rounded-full border border-black/10 bg-white/70 px-5 text-[15px] font-medium text-primary backdrop-blur-xl transition-colors hover:bg-white sm:px-7"
                         >
                             See our work
                         </a>
