@@ -62,22 +62,34 @@ export default function Navbar() {
 
             {/* Mobile dropdown */}
             {open && (
-                <div className="absolute right-0 left-0 top-full z-50 mt-2 overflow-hidden rounded-[28px] border border-white/80 bg-white/90 p-3 shadow-[0_24px_60px_-12px_rgba(0,0,0,0.08)] backdrop-blur-2xl md:hidden">
-                    <div className="flex flex-col items-center gap-1">
-                        {links.map(({ label, href }) => (
-                            <a
-                                key={href}
-                                href={href}
-                                onClick={() => setOpen(false)}
-                                className="rounded-full px-4 py-3 text-sm font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
-                            >
-                                {label}
-                            </a>
-                        ))}
+                <div className="absolute right-0 left-0 top-full z-50 mt-2 overflow-hidden rounded-2xl border border-white/80 bg-white/90 p-4 shadow-[0_24px_60px_-12px_rgba(0,0,0,0.08)] backdrop-blur-2xl md:hidden">
+                    <div className="flex flex-col gap-2">
+                        <a
+                            href="#repairs"
+                            onClick={() => setOpen(false)}
+                            className="rounded-full px-4 py-3 text-center text-base font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
+                        >
+                            Repairs
+                        </a>
+                        <a
+                            href="#about"
+                            onClick={() => setOpen(false)}
+                            className="rounded-full px-4 py-3 text-center text-base font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
+                        >
+                            About us
+                        </a>
+                        <a
+                            href="#faq"
+                            onClick={() => setOpen(false)}
+                            className="rounded-full px-4 py-3 text-center text-base font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
+                        >
+                            FAQ
+                        </a>
+                        <div className="my-2 border-t border-black/10" />
                         <a
                             href="#book"
                             onClick={() => setOpen(false)}
-                            className="mt-2 rounded-full bg-primary px-4 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.02]"
+                            className="rounded-full bg-primary px-6 py-3 text-center text-base font-bold text-white transition-transform hover:scale-[1.02]"
                         >
                             Book a repair
                         </a>
