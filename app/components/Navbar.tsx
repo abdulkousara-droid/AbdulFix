@@ -50,7 +50,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-2 md:hidden">
                     <a
                         href="#book"
-                        className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-white transition-transform hover:scale-[1.02]"
+                        className="rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-white transition-transform hover:scale-[1.02] sm:px-4 sm:py-2 sm:text-sm"
                     >
                         Book a repair
                     </a>
