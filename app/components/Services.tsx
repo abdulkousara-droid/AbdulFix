@@ -1,4 +1,4 @@
-import {
+ import {
     BadgeCheck,
     BatteryCharging,
     Bug,
@@ -22,7 +22,7 @@ type Item = { icon: LucideIcon; title: string; text: string };
 
 const hardware: Item[] = [
     { icon: Smartphone, title: "Screen replacement", text: "Cracked, dead or unresponsive screens" },
-    { icon: BatteryCharging, title: "Battery replacement", text: "Draining fast or shutting down" },
+    { icon: BatteryCharging, title: "Battery replacement", text: "Draining fast or shutting down." },
     { icon: PlugZap, title: "Charging port", text: "Loose, dirty or not charging" },
     { icon: Droplets, title: "Water damage", text: "Cleaning and repair after liquid damage" },
     { icon: Camera, title: "Camera repair", text: "Blurry, cracked or not opening" },
