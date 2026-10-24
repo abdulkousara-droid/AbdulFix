@@ -63,7 +63,7 @@ export default function Navbar() {
             {/* Mobile dropdown */}
             {open && (
                 <div className="absolute right-0 left-0 top-full z-50 mt-2 overflow-hidden rounded-[28px] border border-white/80 bg-white/90 p-3 shadow-[0_24px_60px_-12px_rgba(0,0,0,0.08)] backdrop-blur-2xl md:hidden">
-                    <div className="flex flex-col gap-1">
+                    <div className="flex flex-col items-center gap-1">
                         {links.map(({ label, href }) => (
                             <a
                                 key={href}
