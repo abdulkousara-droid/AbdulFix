@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans_Arabic } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -9,7 +9,17 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import FloatingWhatsApp from "@/app/components/FloatingWhatsApp";
 
-const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
+});
+
+const arabic = Noto_Sans_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-arabic",
+});
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -37,8 +47,8 @@ export default async function LocaleLayout({
     setRequestLocale(locale);
 
     return (
-        <html lang={locale}>
-        <body className={inter.className}>
+        <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+        <body className={`${inter.variable} ${arabic.variable}`}>
         <NextIntlClientProvider>
             <Navbar />
             {children}

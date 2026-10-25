@@ -58,7 +58,7 @@ export default function About() {
                         </div>
                     )}
 
-                    <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-1.5 sm:gap-2">
+                    <div className="absolute bottom-4 start-4 end-4 flex flex-wrap gap-1.5 sm:gap-2">
                         {stats.map((s) => (
                             <div
                                 key={s.key}
@@ -104,7 +104,7 @@ export default function About() {
                         {badges.map(({ icon: Icon, key }) => (
                             <span
                                 key={key}
-                                className="inline-flex h-9 items-center gap-2 rounded-full border border-white/80 bg-white/70 pl-1.5 pr-3.5 text-[13px] font-semibold text-primary shadow-sm"
+                                className="inline-flex h-9 items-center gap-2 rounded-full border border-white/80 bg-white/70 ps-1.5 pe-3.5 text-[13px] font-semibold text-primary shadow-sm"
                             >
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-white">
                   <Icon size={13} strokeWidth={2} />

@@ -156,7 +156,7 @@ export default function Booking() {
                             className="object-cover grayscale"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                        <div className="absolute bottom-4 left-4 rounded-full border border-white/60 bg-white/70 px-4 py-2 text-[13px] font-semibold text-primary backdrop-blur-xl">
+                        <div className="absolute bottom-4 start-4 rounded-full border border-white/60 bg-white/70 px-4 py-2 text-[13px] font-semibold text-primary backdrop-blur-xl">
                             {t("photoBadge")}
                         </div>
                     </div>
@@ -235,6 +235,7 @@ export default function Booking() {
                   maxLength={500}
                   value={form.problem}
                   onChange={(e) => set("problem", e.target.value)}
+                  dir="ltr"
               />
                         </Field>
 

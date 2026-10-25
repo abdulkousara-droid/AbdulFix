@@ -93,7 +93,10 @@ export default function Brands() {
                     {t("title")}
                 </h2>
 
-                <div className="mt-5 flex flex-col [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
+                <div
+                    dir="ltr"
+                    className="mt-5 flex flex-col [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]"
+                >
                     <Row brands={rowOne} />
                     <Row brands={rowTwo} reverse />
                 </div>

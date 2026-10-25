@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
                             : "text-secondary hover:text-primary"
                     }`}
                 >
-                    {l}
+                    {l === "ar" ? "عربي" : l}
                 </button>
             ))}
         </div>

@@ -42,14 +42,14 @@ export default function Hero() {
                     <div className="mt-8 flex flex-wrap items-center gap-2">
                         {steps.map(({ label, icon: Icon }, i) => (
                             <div key={label} className="flex items-center gap-2">
-                                <div className="flex h-9 items-center gap-2 rounded-full border border-white/80 bg-white/70 pl-1.5 pr-3.5 text-[13px] font-semibold text-primary shadow-sm backdrop-blur-xl">
+                                <div className="flex h-9 items-center gap-2 rounded-full border border-white/80 bg-white/70 ps-1.5 pe-3.5 text-[13px] font-semibold text-primary shadow-sm backdrop-blur-xl">
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-white">
                     <Icon size={13} strokeWidth={2} />
                   </span>
                                     {label}
                                 </div>
                                 {i < steps.length - 1 && (
-                                    <ArrowRight size={14} className="text-tertiary" />
+                                    <ArrowRight size={14} className="text-tertiary rtl:rotate-180" />
                                 )}
                             </div>
                         ))}
