@@ -1,7 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Clock, MapPin, Phone } from "lucide-react";
 import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
+import { useTranslations } from "next-intl";
 
 const PHONE_DISPLAY = "+34 671 891 305";
 const PHONE_LINK = "34671891305";
@@ -13,14 +14,18 @@ const socials = [
     { name: "Facebook", icon: SiFacebook, href: "" },
 ].filter((s) => s.href);
 
-const links = [
-    { label: "Repairs", href: "/#repairs" },
-    { label: "About us", href: "/#about" },
-    { label: "FAQ", href: "/#faq" },
-    { label: "Book a repair", href: "/#book" },
-];
-
 export default function Footer() {
+    const t = useTranslations("footer");
+    const tn = useTranslations("nav");
+    const tb = useTranslations("booking");
+
+    const links = [
+        { label: tn("repairs"), href: "/#repairs" },
+        { label: tn("about"), href: "/#about" },
+        { label: tn("faq"), href: "/#faq" },
+        { label: tn("book"), href: "/#book" },
+    ];
+
     return (
         <footer className="mx-auto w-full max-w-6xl px-6 pb-10">
             <div className="rounded-[44px] border border-white/80 bg-white/70 p-6 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04),0_20px_40px_-15px_rgba(0,0,0,0.03)] backdrop-blur-xl sm:p-12">
@@ -34,8 +39,7 @@ export default function Footer() {
                             </span>
                         </Link>
                         <p className="max-w-xs text-[15px] leading-relaxed text-secondary">
-                            Phone and tablet repair, hardware and software. We pick up, we fix
-                            and we deliver.
+                            {t("description")}
                         </p>
 
                         {socials.length > 0 && (
@@ -59,7 +63,7 @@ export default function Footer() {
                     {/* Links */}
                     <div>
                         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-tertiary">
-                            Explore
+                            {t("explore")}
                         </p>
                         <ul className="mt-4 flex flex-col gap-1 text-[15px] font-medium">
                             {links.map((l) => (
@@ -78,12 +82,12 @@ export default function Footer() {
                     {/* Contact */}
                     <div>
                         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-tertiary">
-                            Contact
+                            {t("contact")}
                         </p>
                         <ul className="mt-4 flex flex-col gap-3 text-[15px] text-secondary">
                             <li className="flex items-center gap-3">
                                 <MapPin size={18} className="shrink-0 text-primary" />
-                                Barcelona and Badalona
+                                {t("areas")}
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone size={18} className="shrink-0 text-primary" />
@@ -93,28 +97,26 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Clock size={18} className="shrink-0 text-primary" />
-                                {/* EDIT: your real opening hours */}
-                                Mon to Sat, 10:00 to 20:00
+                                {t("hours")}
                             </li>
                         </ul>
 
                         <a
-                            href={`https://wa.me/${PHONE_LINK}?text=${encodeURIComponent("Hi AbdelFix, I need a repair.")}`}
+                            href={`https://wa.me/${PHONE_LINK}?text=${encodeURIComponent(tb("waMessage"))}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mt-5 inline-flex h-11 items-center gap-2 rounded-full bg-[#25D366] px-5 text-sm font-semibold text-white transition hover:scale-[1.02] hover:bg-[#1FBE5A]"
                         >
                             <SiWhatsapp size={18} aria-hidden />
-                            WhatsApp us
+                            {t("whatsapp")}
                         </a>
                     </div>
                 </div>
 
                 <div className="mt-10 flex flex-col gap-2 border-t border-black/5 pt-6 text-xs text-tertiary sm:flex-row sm:items-center sm:justify-between">
-                    <p>© 2026 AbdelFix. All rights reserved.</p>
+                    <p>{t("rights")}</p>
                     <p>
-                        All brand names and logos belong to their owners. AbdelFix is an
-                        independent repair service.
+                        {t("disclaimer")}
                     </p>
                 </div>
             </div>
