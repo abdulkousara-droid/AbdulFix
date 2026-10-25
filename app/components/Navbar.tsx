@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -19,6 +19,22 @@ export default function Navbar() {
     ];
 
     const [open, setOpen] = useState(false);
+    const menuRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent | TouchEvent) {
+            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+                setOpen(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        document.addEventListener("touchstart", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("touchstart", handleClickOutside);
+        };
+    }, []);
 
     return (
         <header className="sticky top-4 z-50 mx-auto w-full max-w-5xl px-4">
@@ -69,7 +85,7 @@ export default function Navbar() {
 
             {/* Mobile dropdown */}
             {open && (
-                <div className="absolute right-0 left-0 top-full z-50 mt-2 overflow-hidden rounded-2xl border border-white/80 bg-white/90 p-4 shadow-[0_24px_60px_-12px_rgba(0,0,0,0.08)] backdrop-blur-2xl md:hidden">
+                <div ref={menuRef} className="absolute right-0 left-0 top-full z-50 mt-2 overflow-hidden rounded-2xl border border-white/80 bg-white/90 p-4 shadow-[0_24px_60px_-12px_rgba(0,0,0,0.08)] backdrop-blur-2xl md:hidden">
                     <div className="flex flex-col gap-2">
                         <div className="flex justify-center">
                             <LanguageSwitcher />
