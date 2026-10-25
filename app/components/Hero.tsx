@@ -1,13 +1,16 @@
 import { ArrowRight, Package, Truck, Wrench } from "lucide-react";
 import PhoneVisual from "./PhoneVisual";
-
-const steps = [
-    { label: "We pick up", icon: Package },
-    { label: "We fix", icon: Wrench },
-    { label: "We deliver", icon: Truck },
-];
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+    const t = useTranslations("hero");
+
+    const steps = [
+        { label: t("step1"), icon: Package },
+        { label: t("step2"), icon: Wrench  },
+        { label: t("step3"), icon: Truck  },
+    ];
+
     return (
         <section className="relative isolate overflow-x-clip">
             {/* Soft light glows behind the content */}
@@ -23,18 +26,17 @@ export default function Hero() {
                 {/* Text: Appears last on mobile, first on desktop */}
                 <div className="max-w-xl order-last lg:order-first">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-tertiary">
-                        Phone &amp; tablet repair
+                        {t("label")}
                     </p>
 
                     <h1 className="mt-5 text-[48px] font-bold leading-[1.02] tracking-[-0.03em] text-primary sm:text-6xl lg:text-[80px]">
-                        <span className="text-primary">Fixed fast.</span>
+                        <span className="text-primary">{t("line1")}</span>
                         <br />
-                        <span className="font-light text-secondary">Fixed right.</span>
+                        <span className="font-light text-secondary">{t("line2")}</span>
                     </h1>
 
                     <p className="mt-7 max-w-md text-lg leading-relaxed text-secondary">
-                        We pick up your phone or tablet in Barcelona and Badalona, repair
-                        it, and bring it back to your door.
+                        {t("text")}
                     </p>
 
                     <div className="mt-8 flex flex-wrap items-center gap-2">
@@ -58,20 +60,20 @@ export default function Hero() {
                             href="#book"
                             className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-5 text-[15px] font-medium text-white transition-transform hover:scale-[1.02] sm:px-7"
                         >
-                            Book a repair
+                            {t("book")}
                         </a>
                         <a
-                            href="#work"
+                            href="#repairs"
                             className="inline-flex h-12 items-center justify-center rounded-full border border-black/10 bg-white/70 px-5 text-[15px] font-medium text-primary backdrop-blur-xl transition-colors hover:bg-white sm:px-7"
                         >
-                            See our work
+                            {t("repairs")}
                         </a>
                     </div>
 
                     <div className="mt-10 flex flex-wrap gap-x-7 gap-y-2 text-[13px] font-medium text-tertiary">
-                        <span>Free pickup and delivery</span>
-                        <span>Barcelona and Badalona</span>
-                        <span>Experienced technicians</span>
+                        <span>{t("trust1")}</span>
+                        <span>{t("trust2")}</span>
+                        <span>{t("trust3")}</span>
                     </div>
                 </div>
             </div>

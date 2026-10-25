@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "AbdelFix | Reparación de móviles y tablets en Barcelona y Badalona",
+    "description": "Recogemos tu móvil o tablet, lo reparamos y te lo llevamos a casa. Reparaciones de hardware y software en Barcelona y Badalona."
+  },
+  "nav": {
+    "repairs": "Reparaciones",
+    "about": "Sobre nosotros",
+    "faq": "Preguntas",
+    "book": "Reservar reparación",
+    "language": "Idioma"
+  },
+  "hero": {
+    "label": "Reparación de móviles y tablets",
+    "line1": "Arreglado rápido.",
+    "line2": "Arreglado bien.",
+    "text": "Recogemos tu móvil o tablet en Barcelona y Badalona, lo reparamos y te lo llevamos de vuelta a casa.",
+    "step1": "Lo recogemos",
+    "step2": "Lo reparamos",
+    "step3": "Lo entregamos",
+    "book": "Reservar reparación",
+    "repairs": "Ver reparaciones",
+    "trust1": "Recogida y entrega gratis",
+    "trust2": "Barcelona y Badalona",
+    "trust3": "Técnicos con experiencia"
+  },
+  "phone": {
+    "label": "Tu reparación",
+    "title1": "Listo para",
+    "title2": "la entrega",
+    "pickedUp": "Recogido",
+    "repaired": "Reparado",
+    "onTheWay": "En camino de vuelta"
+  },
+  "brands": {
+    "title": "Reparamos todas las grandes marcas",
+    "disclaimer": "Todas las marcas y logotipos pertenecen a sus propietarios. AbdelFix es un servicio de reparación independiente."
+  },
+  "services": {
+    "label": "Reparaciones",
+    "title": "Todas las reparaciones, un solo equipo.",
+    "subtitle": "Reparaciones de hardware y software para móviles y tablets.",
+    "hardware": {
+      "label": "Hardware",
+      "title": "Arreglamos lo que se rompe",
+      "screen": { "title": "Cambio de pantalla", "text": "Pantallas rotas, sin imagen o que no responden" },
+      "battery": { "title": "Cambio de batería", "text": "Se descarga rápido o se apaga sola" },
+      "port": { "title": "Puerto de carga", "text": "Flojo, sucio o que no carga" },
+      "water": { "title": "Daños por agua", "text": "Limpieza y reparación tras contacto con líquidos" },
+      "camera": { "title": "Reparación de cámara", "text": "Borrosa, rota o que no abre" },
+      "audio": { "title": "Altavoz y micrófono", "text": "Sin sonido, poco volumen o no se oye la voz" }
+    },
+    "software": {
+      "label": "Software",
+      "title": "Para que funcione bien",
+      "updates": { "title": "Actualizaciones y reinstalación", "text": "Actualizamos y reinstalamos el sistema" },
+      "slow": { "title": "Móvil lento o que se congela", "text": "Lo aceleramos y arreglamos los cierres" },
+      "virus": { "title": "Eliminación de virus y malware", "text": "Limpiamos tu dispositivo y lo protegemos" },
+      "reset": { "title": "Restablecimiento y configuración", "text": "Empezar de cero, configurado como nuevo" },
+      "backup": { "title": "Copia y traspaso de datos", "text": "Tus fotos y contactos a salvo" },
+      "diagnostics": { "title": "Diagnóstico de software", "text": "Averiguamos qué falla antes de arreglarlo" }
+    },
+    "promises": {
+      "price": { "title": "Precios justos", "text": "Sabes el precio antes de empezar" },
+      "warranty": { "title": "Garantía", "text": "Incluida en cada reparación" },
+      "parts": { "title": "Piezas de calidad", "text": "Probadas antes de instalarlas en tu dispositivo" },
+      "fast": { "title": "Servicio rápido", "text": "Trabajamos para devolverte tu dispositivo cuanto antes" }
+    }
+  },
+  "about": {
+    "label": "Sobre nosotros",
+    "title": "Dos generaciones. Un equipo.",
+    "subtitle": "Reparación de hardware y software, de la placa al sistema operativo.",
+    "placeholder": "[Añade una foto tuya y de tu padre]",
+    "photoAlt": "Equipo de padre e hijo",
+    "story": "AbdelFix es un equipo de padre e hijo. Mi padre es ingeniero eléctrico con más de 25 años de experiencia reparando móviles y tablets. Yo soy ingeniero de software y trabajo a su lado desde hace más de seis años. Entre los dos cubrimos las dos mitades de cada reparación: el hardware que se estropea y el software que lo hace funcionar.",
+    "hardwareRole": "El experto en hardware",
+    "hardwareDetail": "Ingeniero eléctrico · más de 25 años",
+    "hardwareText": "Repara móviles y tablets hasta el nivel de los componentes de la placa, encontrando la avería exacta en lugar de cambiar piezas a ciegas.",
+    "softwareRole": "El experto en software",
+    "softwareDetail": "Ingeniero de software · desde 2018",
+    "softwareText": "Se encarga de la reparación del sistema, la recuperación, las actualizaciones y los diagnósticos, y deja tu dispositivo funcionando como debe.",
+    "statHardware": "años reparando hardware",
+    "statTeam": "años trabajando juntos",
+    "statSoftware": "ingeniero de software desde",
+    "badgeTeam": "Equipo de padre e hijo",
+    "badgeHome": "Reparado en casa por expertos",
+    "badgePrice": "Precio claro antes de empezar"
+  },
+  "faq": {
+    "label": "Preguntas",
+    "title": "Buenas preguntas.",
+    "subtitle": "Lo primero que nos suele preguntar la gente.",
+    "q1": "¿Cómo funciona la recogida y la entrega?",
+    "a1": "Envíanos tu solicitud y acordamos una hora para recoger tu dispositivo en tu dirección de Barcelona o Badalona. Lo reparamos y te lo llevamos de vuelta a casa.",
+    "q2": "¿La recogida y la entrega son realmente gratis?",
+    "a2": "Sí. La recogida y la entrega son gratis en Barcelona y Badalona.",
+    "q3": "¿Sabré el precio antes de empezar?",
+    "a3": "Sí. Revisamos el problema primero y te decimos el precio antes de reparar nada. Si no quieres seguir adelante, no hay ningún compromiso.",
+    "q4": "¿Cuánto tarda una reparación?",
+    "a4": "Muchas reparaciones, como pantallas y baterías, se hacen el mismo día o en 24 horas. Los problemas de hardware más difíciles pueden tardar más, y te diremos el plazo cuando te demos el precio.",
+    "q5": "¿Ofrecéis garantía?",
+    "a5": "Sí, cada reparación incluye garantía. Te diremos exactamente cuánto dura cuando confirmemos tu reparación.",
+    "q6": "¿Y si no podéis arreglar mi dispositivo?",
+    "a6": "Te lo diremos con honestidad y no pagarás por una reparación que no hayamos podido completar.",
+    "q7": "¿Reparáis también tablets?",
+    "a7": "Sí. Reparamos móviles y tablets, hardware y software, de todas las grandes marcas.",
+    "still": "¿Tienes otra pregunta?",
+    "cta": "Escríbenos"
+  },
+  "booking": {
+    "title": "Cuando tú quieras.",
+    "subtitle": "Cuéntanos sobre tu móvil o tablet y lo recogeremos, lo repararemos y te lo devolveremos.",
+    "cardLabel": "Reservar reparación",
+    "cardTitle": "Cuéntanos qué ha pasado.",
+    "cardText": "Rellena unos datos y confirmaremos la recogida. ¿Prefieres hablar? Escríbenos por WhatsApp.",
+    "whatsapp": "Chatea por WhatsApp",
+    "waMessage": "Hola AbdelFix, necesito una reparación.",
+    "photoAlt": "Técnico reparando la pantalla de un iPhone",
+    "photoBadge": "Manos cuidadosas. Precio claro.",
+    "thanksTitle": "¡Gracias!",
+    "thanksText": "Hemos recibido tu solicitud y te contactaremos pronto para confirmar la recogida.",
+    "another": "Enviar otra solicitud",
+    "name": "Nombre",
+    "namePh": "Tu nombre",
+    "phone": "Teléfono",
+    "device": "Dispositivo",
+    "devicePh": "p. ej. iPhone 13",
+    "problem": "¿Cuál es el problema?",
+    "problemPh": "p. ej. pantalla rota",
+    "area": "Zona",
+    "address": "Dirección de recogida",
+    "addressPh": "Calle, número, piso y puerta",
+    "submit": "Solicitar recogida",
+    "sending": "Enviando...",
+    "error": "Algo ha salido mal. Inténtalo de nuevo o escríbenos por WhatsApp.",
+    "privacy": "Solo usamos tus datos para gestionar tu reparación.",
+    "errName": "Introduce tu nombre.",
+    "errPhone": "Introduce un teléfono válido.",
+    "errDevice": "¿Qué dispositivo es?",
+    "errProblem": "Cuéntanos qué le pasa.",
+    "errAddress": "Introduce la dirección de recogida."
+  },
+  "footer": {
+    "description": "Reparación de móviles y tablets, hardware y software. Recogemos, reparamos y entregamos.",
+    "explore": "Explorar",
+    "contact": "Contacto",
+    "areas": "Barcelona y Badalona",
+    "hours": "Lun a Sáb, 10:00 a 20:00",
+    "whatsapp": "Escríbenos por WhatsApp",
+    "rights": "© 2026 AbdelFix. Todos los derechos reservados.",
+    "disclaimer": "Todas las marcas y logotipos pertenecen a sus propietarios. AbdelFix es un servicio de reparación independiente."
+  },
+  "floating": {
+    "aria": "Chatea con AbdelFix por WhatsApp"
+  }
+}

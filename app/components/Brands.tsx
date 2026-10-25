@@ -15,6 +15,7 @@ import {
     SiVivo,
     SiXiaomi,
 } from "react-icons/si";
+import { useTranslations } from "next-intl";
 
 type Brand = {
     name: string;
@@ -84,11 +85,12 @@ function Row({ brands, reverse = false }: { brands: Brand[]; reverse?: boolean }
 }
 
 export default function Brands() {
+    const t = useTranslations("brands");
     return (
         <section className="mx-auto w-full max-w-7xl px-6 pb-20">
             <div className="overflow-hidden rounded-[40px] border border-white/80 bg-white/70 py-8 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04),0_20px_40px_-15px_rgba(0,0,0,0.03)] backdrop-blur-xl">
                 <h2 className="px-6 text-center text-2xl font-bold tracking-[-0.03em] text-primary sm:text-3xl">
-                    We repair every major brand
+                    {t("title")}
                 </h2>
 
                 <div className="mt-5 flex flex-col [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
@@ -97,8 +99,7 @@ export default function Brands() {
                 </div>
 
                 <p className="mt-5 px-6 text-center text-xs text-tertiary">
-                    All brand names and logos belong to their owners. AbdelFix is an
-                    independent repair service.
+                    {t("disclaimer")}
                 </p>
             </div>
         </section>

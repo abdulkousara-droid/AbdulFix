@@ -1,17 +1,23 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import LanguageSwitcher from "./LanguageSwitcher";
 
-const links = [
-    { label: "Repairs", href: "#repairs" },
-    { label: "About us", href: "#about" },
-    { label: "FAQ", href: "#faq" },
-];
+
 
 export default function Navbar() {
+    const t = useTranslations("nav");
+
+    const links = [
+        { label: t("repairs"), href: "#repairs" },
+        { label: t("about"), href: "#about" },
+        { label: t("faq"), href: "#faq" },
+    ];
+
     const [open, setOpen] = useState(false);
 
     return (
@@ -37,12 +43,13 @@ export default function Navbar() {
                             </a>
                         ))}
                     </div>
-
+                    <LanguageSwitcher />
                     <a
                         href="#book"
                         className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white transition-transform hover:scale-[1.02]"
                     >
-                        Book a repair
+
+                        {t("book")}
                     </a>
                 </div>
 

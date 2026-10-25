@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "AbdelFix | Phone and tablet repair in Barcelona and Badalona",
+    "description": "We pick up your phone or tablet, repair it and bring it back to your door. Hardware and software repair in Barcelona and Badalona."
+  },
+  "nav": {
+    "repairs": "Repairs",
+    "about": "About us",
+    "faq": "FAQ",
+    "book": "Book a repair",
+    "language": "Language"
+  },
+  "hero": {
+    "label": "Phone & tablet repair",
+    "line1": "Fixed fast.",
+    "line2": "Fixed right.",
+    "text": "We pick up your phone or tablet in Barcelona and Badalona, repair it, and bring it back to your door.",
+    "step1": "We pick up",
+    "step2": "We fix",
+    "step3": "We deliver",
+    "book": "Book a repair",
+    "repairs": "See our repairs",
+    "trust1": "Free pickup and delivery",
+    "trust2": "Barcelona and Badalona",
+    "trust3": "Experienced technicians"
+  },
+  "phone": {
+    "label": "Your repair",
+    "title1": "Ready for",
+    "title2": "delivery",
+    "pickedUp": "Picked up",
+    "repaired": "Repaired",
+    "onTheWay": "On the way back"
+  },
+  "brands": {
+    "title": "We repair every major brand",
+    "disclaimer": "All brand names and logos belong to their owners. AbdelFix is an independent repair service."
+  },
+  "services": {
+    "label": "Repairs",
+    "title": "Every repair, one team.",
+    "subtitle": "Hardware and software repairs for phones and tablets.",
+    "hardware": {
+      "label": "Hardware",
+      "title": "Fixing what is broken",
+      "screen": { "title": "Screen replacement", "text": "Cracked, dead or unresponsive screens" },
+      "battery": { "title": "Battery replacement", "text": "Draining fast or shutting down" },
+      "port": { "title": "Charging port", "text": "Loose, dirty or not charging" },
+      "water": { "title": "Water damage", "text": "Cleaning and repair after liquid damage" },
+      "camera": { "title": "Camera repair", "text": "Blurry, cracked or not opening" },
+      "audio": { "title": "Speaker and microphone", "text": "No sound, low sound or no voice" }
+    },
+    "software": {
+      "label": "Software",
+      "title": "Making it run right",
+      "updates": { "title": "Updates and flashing", "text": "System updates and software reinstall" },
+      "slow": { "title": "Slow or freezing phone", "text": "Speed it up and fix crashes" },
+      "virus": { "title": "Virus and malware removal", "text": "Clean your device and secure it" },
+      "reset": { "title": "Factory reset and setup", "text": "Fresh start, set up like new" },
+      "backup": { "title": "Data backup and transfer", "text": "Keep your photos and contacts safe" },
+      "diagnostics": { "title": "Software diagnostics", "text": "Find out what is wrong before we fix it" }
+    },
+    "promises": {
+      "price": { "title": "Fair prices", "text": "You know the price before we start" },
+      "warranty": { "title": "Warranty", "text": "Included with every repair" },
+      "parts": { "title": "Quality parts", "text": "Tested before they go into your device" },
+      "fast": { "title": "Fast service", "text": "We work to get your device back quickly" }
+    }
+  },
+  "about": {
+    "label": "About us",
+    "title": "Two generations. One team.",
+    "subtitle": "Hardware and software repair, from the circuit board to the operating system.",
+    "placeholder": "[Add a photo of you and your dad]",
+    "photoAlt": "Father and son repair team",
+    "story": "AbdelFix is a father-and-son team. My dad is an electrical engineer with more than 25 years of experience repairing phones and tablets. I am a software engineer, and I have worked beside him for over six years. Between us we cover both halves of every repair: the hardware that breaks and the software that makes it run.",
+    "hardwareRole": "The hardware expert",
+    "hardwareDetail": "Electrical engineer · 25+ years",
+    "hardwareText": "Repairs phones and tablets down to the components on the board, finding the exact fault instead of swapping parts and hoping.",
+    "softwareRole": "The software expert",
+    "softwareDetail": "Software engineer · since 2018",
+    "softwareText": "Handles system repair, recovery, updates and diagnostics, and gets your device running right again.",
+    "statHardware": "years of hardware repair",
+    "statTeam": "years working as a team",
+    "statSoftware": "software engineer since",
+    "badgeTeam": "Father-and-son team",
+    "badgeHome": "Repaired at home by experts",
+    "badgePrice": "Clear price before we start"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Good questions.",
+    "subtitle": "The things people ask us first.",
+    "q1": "How does pickup and delivery work?",
+    "a1": "Send us your request, and we agree a time to collect your device from your address in Barcelona or Badalona. We repair it and bring it back to your door.",
+    "q2": "Is pickup and delivery really free?",
+    "a2": "Yes. Pickup and delivery are free in Barcelona and Badalona.",
+    "q3": "Will I know the price before you start?",
+    "a3": "Yes. We check the problem first and tell you the price before we repair anything. If you do not want to go ahead, there is no obligation.",
+    "q4": "How long does a repair take?",
+    "a4": "Many repairs, like screens and batteries, are done the same day or within 24 hours. Harder hardware problems can take longer, and we will tell you the time when we give you the price.",
+    "q5": "Do you offer a warranty?",
+    "a5": "Yes, every repair comes with a warranty. We will tell you exactly how long it lasts when we confirm your repair.",
+    "q6": "What if you cannot fix my device?",
+    "a6": "We will tell you honestly, and you will not be charged for a repair we could not complete.",
+    "q7": "Do you repair tablets too?",
+    "a7": "Yes. We repair phones and tablets, hardware and software, from all the major brands.",
+    "still": "Still have a question?",
+    "cta": "Send us a message"
+  },
+  "booking": {
+    "title": "Ready when you are.",
+    "subtitle": "Tell us about your phone or tablet and we will pick it up, fix it and bring it back.",
+    "cardLabel": "Book a repair",
+    "cardTitle": "Tell us what happened.",
+    "cardText": "Fill in a few details and we will confirm your pickup. Prefer to chat? Message us on WhatsApp.",
+    "whatsapp": "Chat on WhatsApp",
+    "waMessage": "Hi AbdelFix, I need a repair.",
+    "photoAlt": "Technician repairing an iPhone screen",
+    "photoBadge": "Careful hands. Clear price.",
+    "thanksTitle": "Thank you!",
+    "thanksText": "We got your request and will contact you soon to confirm the pickup.",
+    "another": "Send another request",
+    "name": "Name",
+    "namePh": "Your name",
+    "phone": "Phone number",
+    "device": "Device",
+    "devicePh": "e.g. iPhone 13",
+    "problem": "What is the problem?",
+    "problemPh": "e.g. cracked screen",
+    "area": "Area",
+    "address": "Pickup address",
+    "addressPh": "Street, number, floor and door",
+    "submit": "Request a pickup",
+    "sending": "Sending...",
+    "error": "Something went wrong. Please try again, or message us on WhatsApp.",
+    "privacy": "We only use your details to arrange your repair.",
+    "errName": "Please enter your name.",
+    "errPhone": "Enter a valid phone number.",
+    "errDevice": "Which device is it?",
+    "errProblem": "Tell us what is wrong.",
+    "errAddress": "Enter the pickup address."
+  },
+  "footer": {
+    "description": "Phone and tablet repair, hardware and software. We pick up, we fix and we deliver.",
+    "explore": "Explore",
+    "contact": "Contact",
+    "areas": "Barcelona and Badalona",
+    "hours": "Mon to Sat, 10:00 to 20:00",
+    "whatsapp": "WhatsApp us",
+    "rights": "© 2026 AbdelFix. All rights reserved.",
+    "disclaimer": "All brand names and logos belong to their owners. AbdelFix is an independent repair service."
+  },
+  "floating": {
+    "aria": "Chat with AbdelFix on WhatsApp"
+  }
+}
