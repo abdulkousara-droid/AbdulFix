@@ -14,7 +14,7 @@ export default function PhoneVisual() {
     return (
         // Outer box sets the size per screen; the inner box is fixed 440x600 and scaled to fit
         <div className="h-[420px] w-[308px] sm:h-[510px] sm:w-[374px] lg:h-[600px] lg:w-[440px]">
-            <div className="relative h-[600px] w-[440px] origin-top-left scale-[0.7] sm:scale-[0.85] lg:scale-100">
+            <div className="relative h-[600px] w-[440px] origin-top-left rtl:origin-top-right scale-[0.7] sm:scale-[0.85] lg:scale-100">
                 {/* Phone shadow: sits behind the phone, only shows outside its edges */}
                 <div className="absolute left-[140px] top-0 h-[600px] w-[300px] rounded-[60px] shadow-[0_60px_90px_rgba(20,24,36,0.18),0_10px_24px_rgba(20,24,36,0.08)] ring-1 ring-black/[0.04]" />
 
