@@ -91,7 +91,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone size={18} className="shrink-0 text-primary" />
-                                <a href={`tel:+${PHONE_LINK}`} className="hover:text-primary">
+                                <a href={`tel:+${PHONE_LINK}`} className="hover:text-primary" dir="ltr">
                                     {PHONE_DISPLAY}
                                 </a>
                             </li>
