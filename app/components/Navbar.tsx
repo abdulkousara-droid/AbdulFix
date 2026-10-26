@@ -20,10 +20,14 @@ export default function Navbar() {
 
     const [open, setOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
+    const buttonRef = useRef<HTMLButtonElement>(null);
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent | TouchEvent) {
-            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+            if (
+                menuRef.current && !menuRef.current.contains(event.target as Node) &&
+                buttonRef.current && !buttonRef.current.contains(event.target as Node)
+            ) {
                 setOpen(false);
             }
         }
@@ -72,6 +76,7 @@ export default function Navbar() {
                 {/* Mobile: hamburger */}
                 <div className="flex items-center gap-2 md:hidden">
                     <button
+                        ref={buttonRef}
                         type="button"
                         onClick={() => setOpen((v) => !v)}
                         aria-label="Toggle navigation menu"
@@ -95,21 +100,21 @@ export default function Navbar() {
                             onClick={() => setOpen(false)}
                             className="rounded-full px-4 py-3 text-center text-base font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
                         >
-                            Repairs
+                            {t("repairs")}
                         </a>
                         <a
                             href="#about"
                             onClick={() => setOpen(false)}
                             className="rounded-full px-4 py-3 text-center text-base font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
                         >
-                            About us
+                            {t("about")}
                         </a>
                         <a
                             href="#faq"
                             onClick={() => setOpen(false)}
                             className="rounded-full px-4 py-3 text-center text-base font-medium text-secondary transition-all duration-200 hover:bg-tertiary hover:text-white"
                         >
-                            FAQ
+                            {t("faq")}
                         </a>
                         <div className="my-2 border-t border-black/10" />
                         <a
@@ -117,7 +122,7 @@ export default function Navbar() {
                             onClick={() => setOpen(false)}
                             className="rounded-full bg-primary px-6 py-3 text-center text-base font-bold text-white transition-transform hover:scale-[1.02]"
                         >
-                            Book a repair
+                            {t("book")}
                         </a>
                     </div>
                 </div>
